@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1480509908</timestamp>
+  <hostname>benji</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Amplifier XE 2016 Update 2</product>
+  <buildNumber type="s32_t">444464</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <CPUFrequency type="s64_t">1796000000</CPUFrequency>
+  <collectionTimeBegin type="u64_t">1480509908</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1480509924</collectionTimeEnd>
+  <variables>
+   <at>hs</at>
+  </variables>
+ </rdmgr>
+</root>

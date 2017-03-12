@@ -1,0 +1,123 @@
+Decoder::Decoder(int n, int k, set<int> frozen, double sd) :
+m(log2(n)), N(n), K(k), dispersion(sd)
+{
+	// std::cout << "m = " << m << std::endl;
+#ifdef CPU
+	P = new double**[m + 1];
+	C = new bool**[m + 1];
+		S = new double*[m + 1];
+	buffer_S.reserve(m + 1);
+	buffer_C.reserve(m + 1);
+#endif
+
+#ifdef OPENCL
+	///////////////////////////////
+	std::vector<cl::Platform> all_platforms;
+	cl::Platform::get(&all_platforms);
+	if (all_platforms.size() == 0){
+		std::cout << " No platforms found. Check OpenCL installation!\n";
+		exit(1);
+	}
+
+	cl::Platform default_platform = all_platforms[1];
+	//std::cout << "Using platform: " << default_platform.getInfo<CL_PLATFORM_NAME>() << "\n";
+
+	//get default device of the default platform
+	std::vector<cl::Device> all_devices;
+	default_platform.getDevices(CL_DEVICE_TYPE_ALL, &all_devices);
+	if (all_devices.size() == 0){
+		std::cout << " No devices found. Check OpenCL installation!\n";
+		exit(1);
+	}
+	cl::Device default_device = all_devices[0];
+	//std::cout << "Using device: " << default_device.getInfo<CL_DEVICE_NAME>() << "\n";
+
+
+	cl::Context context({ default_device });
+	///////////////////////////////
+
+	y_buf = cl::Buffer(context, CL_MEM_READ_WRITE, sizeof(double) * n);
+#endif
+
+	for (int i = 0; i <= m; ++i) {
+#ifdef OPENCL
+		buffer_S.push_back(*new cl::Buffer(context, CL_MEM_READ_WRITE, sizeof(double) * (1 << (m - i))));
+		buffer_C.push_back(*new cl::Buffer(context, CL_MEM_READ_WRITE, sizeof(double) * (1 << (m - i)))); 
+#endif
+#ifdef CPU
+		P[i] = new double*[(int)pow(2, m - i)];
+		S[i] = new double[(int)pow(2, m - i)];
+		C[i] = new bool*[(int)pow(2, m - i)];
+		for (int j = 0; j < (int)pow(2, m - i); ++j) {
+			C[i][j] = new bool[2];
+			P[i][j] = new double[2];
+			memset(P[i][j], 0, sizeof(double));
+			memset(C[i][j], 0, sizeof(bool) * 2);
+		}
+#endif
+	}
+#ifdef OPENCL
+		FILE *fp;
+		char fileName[] = "./buxus.cl";
+		char* source_str;
+		size_t source_size;
+
+		// Load the source code containing the kernel
+		fp = fopen(fileName, "r");
+		if (!fp) {
+			fprintf(stderr, "Failed to load kernel.\n");
+			exit(1);
+		}
+		source_str = (char*)malloc(MAX_SOURCE_SIZE);
+		source_size = fread(source_str, 1, MAX_SOURCE_SIZE, fp);
+		fclose(fp);
+		
+
+		queue = cl::CommandQueue(context, default_device);
+
+		sources.push_back({ source_str, source_size });
+
+		program = cl::Program(context, sources);
+		if (program.build({ default_device }) != CL_SUCCESS){
+			std::cout << " Error building: " << program.getBuildInfo<CL_PROGRAM_BUILD_LOG>(default_device) << "\n";
+			exit(1);
+		}
+
+		kernel_S = cl::Kernel(program, "func");
+
+		kernel_softCombine = cl::Kernel(program, "SoftCombine");
+		kernel_softxor = cl::Kernel(program, "SoftXOR");
+		kernel_xor = cl::Kernel(program, "XOR");
+		kernel_wke = cl::Kernel(program, "wierdest_kernel_ever");
+		kernel_kew = cl::Kernel(program, "kernel_even_wierder");
+#endif
+
+
+		test_s = *new cl::Buffer(context, CL_MEM_READ_WRITE, sizeof(float) * (N));
+	//frozen = new bool[N];
+	//memset(frozen, 0, sizeof(bool)*N);
+	/*for (int i = N - 1; i >= K; --i) {
+		// std::cout << indeces[i] << " " << shuffle[indeces[i]] << " " << indeces[shuffle[i]] << std::endl;
+		frozen[indeces[i]] = true;
+	}*/
+	// std::cout << "frozen positions: ";
+	// for (int i = 0; i < N; ++i) {
+	//   std::cout << frozen[i] << " ";
+	// }
+	// std::cout << std::endl;
+}
+
+Decoder::~Decoder() {
+	//delete[] frozen;
+	for (int i = 0; i <= m; ++i) {
+		delete[] P[i];
+		for (int j = 0; j < N; ++j) {
+
+			delete[] C[i][j];
+		}
+		delete[] P[i];
+		delete[] C[i];
+	}
+	delete[] P;
+	delete[] C;
+}

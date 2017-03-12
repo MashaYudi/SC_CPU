@@ -1,0 +1,78 @@
+-r
+C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\My Amplifier XE Results - SC_СPU\r000ah
+--target=host
+--itt-config=frame
+--stack-stitching
+--collector=vtsspp
+--data-limit-mb=500
+--disk-space-limit=100
+--mrte-type=java,dotnet
+--event-config=CPU_CLK_UNHALTED.THREAD:sa=1800000,CPU_CLK_UNHALTED.REF_TSC:sa=1800000,INST_RETIRED.ANY:sa=1800000
+--event-config=BR_INST_RETIRED.NEAR_TAKEN:sa=200003:usr=yes:os=no
+--bts-count=200
+--sample-after-multiplier=1.0
+--event-mux
+--mrte-mode=auto
+--search-dir
+sym=C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug
+--search-dir
+sym=C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU
+--search-dir
+bin=C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug
+--search-dir
+bin=C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU
+--search-dir
+bin=C:/Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\$(VC_ExecutablePath_x86)
+--search-dir
+bin=C:/Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\$(WindowsSDK_ExecutablePath)
+--search-dir
+bin=C:/Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\$(VS_ExecutablePath)
+--search-dir
+bin=C:/Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\$(MSBuild_ExecutablePath)
+--search-dir
+bin=C:\WINDOWS\SysWow64
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86
+--search-dir
+bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin
+--search-dir
+bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\libnvvp
+--search-dir
+bin=C:\Program Files (x86)\ImageMagick-7.0.1-Q16-HDRI
+--search-dir
+bin=C:\oraclexe\app\oracle\product\11.2.0\server\bin
+--search-dir
+bin=C:\ProgramData\Oracle\Java\javapath
+--search-dir
+bin=C:\Windows\system32
+--search-dir
+bin=C:\Windows
+--search-dir
+bin=C:\Windows\System32\Wbem
+--search-dir
+bin=C:\Windows\System32\WindowsPowerShell\v1.0
+--search-dir
+bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+--search-dir
+bin=C:\Program Files (x86)\MiKTeX 2.9\miktex\bin
+--search-dir
+bin=C:\Program Files (x86)\Skype\Phone
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+--search-dir
+bin=C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0
+--search-dir
+bin=C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+--search-dir
+bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+--search-dir
+bin=C:\Tcl\bin
+--search-dir
+bin=C:\cygwin\bin
+--
+C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug\SC_СPU.exe
+1024,
+64,
+10

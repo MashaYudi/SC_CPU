@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag>
+ <entry path="start_tsc">
+  <indexFields>
+   <field path="dd_barrier"/>
+   <field path="dd_barrier.process"/>
+   <field path="dd_barrier.attribute"/>
+   <field path="dd_barrier.detail"/>
+  </indexFields>
+  <int64Fields>
+   <field path="count"/>
+   <field path="end_tsc"/>
+  </int64Fields>
+ </entry>
+</bag>

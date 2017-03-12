@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption>localhost</connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1478026159</timestamp>
+  <hostname>benji</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Amplifier XE 2017</product>
+  <buildNumber type="s32_t">478468</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <CPUFrequency type="s64_t">1800000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">58</CPUModel>
+  <CPUStepping type="s32_t">9</CPUStepping>
+  <CPUBrandName>       Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz</CPUBrandName>
+  <isa>avx</isa>
+ </rdmgr>
+ <All_Configurations-All_Platforms>
+  <target_settings>
+   <selected_workload>
+    <localhost>launch</localhost>
+   </selected_workload>
+   <result_dir>
+    <localhost>C:\Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\My Amplifier XE Results - SC_GPU</localhost>
+   </result_dir>
+   <workloads>
+    <localhost>
+     <attach type="pointer" type_id="dasID_cctrl2::AttachWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>attach</targetName>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <attach.process_name>SC_GPU.exe</attach.process_name>
+       <attach.pid type="null"></attach.pid>
+       <result_directory.path>C:\Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\My Amplifier XE Results - SC_GPU\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseSVN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ki3ill\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseGit\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Library\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeSystemWide</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>followChildStrategy</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>attach</value>
+        </contextValue>
+       </context>
+      </workload>
+     </attach>
+     <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>launch</targetName>
+       <launch_app.inherit_sys_environment type="bool">true</launch_app.inherit_sys_environment>
+       <launch_app.app_to_launch>C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug\SC_GPU.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>C:\Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU</launch_app.working_folder>
+       <launch_app.app_parameters>1024, 512, 10</launch_app.app_parameters>
+       <launch_app.environment></launch_app.environment>
+       <launch_app.environment_prepend>PATH=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016\windows\redist\ia32\compiler;</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\My Amplifier XE Results - SC_GPU\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseSVN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ki3ill\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseGit\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Library\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeSystemWide</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>followChildStrategy</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>native</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>launch</value>
+        </contextValue>
+        <contextValue>
+         <id>traceMpi</id>
+         <value type="bool">false</value>
+        </contextValue>
+       </context>
+      </workload>
+     </launch>
+     <system type="pointer" type_id="dasID_cctrl2::SystemWideWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>system</targetName>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\My Amplifier XE Results - SC_GPU\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\Desktop\fightClub\SC_GPU</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VC_ExecutablePath_x86)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\Masha\Desktop\fightClub\SC_GPU\SC_GPU\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\SysWow64</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Skype\Phone</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\OpenVPN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseSVN\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\110\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Ki3ill\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\TortoiseGit\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Anaconda3\Library\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\Masha\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>allowMultipleRuns</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>analyzeKvmGuest</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>cpuMask</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>customCollector</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>followChild</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>goodFastFrameThreshold</id>
+         <value type="double">100</value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestKallsyms</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmGuestModules</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>kvmProfileGuest</id>
+         <value type="null"></value>
+        </contextValue>
+        <contextValue>
+         <id>mrteMode</id>
+         <value>native</value>
+        </contextValue>
+        <contextValue>
+         <id>slowGoodFrameThreshold</id>
+         <value type="double">40</value>
+        </contextValue>
+        <contextValue>
+         <id>targetDurationType</id>
+         <value>short</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>system</value>
+        </contextValue>
+       </context>
+      </workload>
+     </system>
+    </localhost>
+   </workloads>
+   <result_pattern>
+    <localhost>r@@@{at}</localhost>
+   </result_pattern>
+  </target_settings>
+  <analysis_type_settings>
+   <selected_analysis_type_path>C:\Program Files (x86)\IntelSWTools\VTune Amplifier XE 2016\config\analysis_type\advanced_hotspots.cfg</selected_analysis_type_path>
+  </analysis_type_settings>
+ </All_Configurations-All_Platforms>
+ <contextValues>
+  <contextValue>
+   <id>emulatorByCtxKnob</id>
+   <value></value>
+  </contextValue>
+ </contextValues>
+</root>

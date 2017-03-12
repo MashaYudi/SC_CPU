@@ -1,0 +1,37 @@
+﻿Build started 30.11.2016 15:10:04.
+     1>Project "C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\SC_GPU.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SC_GPU.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CTransformation.cpp decoder.cpp encoder.cpp main.cpp MeanCount.cpp noise.cpp SCdecoder.cpp
+         SCdecoder.cpp
+         noise.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\noise.cpp(8): warning C4244: 'initializing' : conversion from 'std::chrono::system_clock::rep' to 'unsigned int', possible loss of data
+         MeanCount.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\meancount.cpp(60): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         main.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\main.cpp(100): warning C4805: '!=' : unsafe mix of type 'bool' and type '__w64 int' in operation
+         encoder.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\encoder.cpp(8): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\encoder.cpp(13): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\encoder.cpp(14): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         decoder.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\decoder.cpp(11): warning C4244: 'initializing' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\decoder.cpp(345): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\decoder.cpp(713): warning C4018: '<' : signed/unsigned mismatch
+         CTransformation.cpp
+     1>c:\users\мария\documents\spbpu\fightclub\sc\sc_сpu\sc_gpu\ctransformation.cpp(44): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug\SC_СPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug\SC_СPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug\SC_СPU.lib" /MACHINE:X86 Debug\CTransformation.obj
+         Debug\decoder.obj
+         Debug\encoder.obj
+         Debug\main.obj
+         Debug\MeanCount.obj
+         Debug\noise.obj
+         Debug\SCdecoder.obj
+         SC_GPU.vcxproj -> C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\Debug\SC_СPU.exe
+     1>Done Building Project "C:\Users\Мария\Documents\SPBPU\fightClub\SC\SC_СPU\SC_GPU\SC_GPU.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.54

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1480508155</timestamp>
+  <hostname>benji</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Amplifier XE 2017</product>
+  <buildNumber type="s32_t">478468</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <CPUFrequency type="s64_t">1800000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">58</CPUModel>
+  <CPUStepping type="s32_t">9</CPUStepping>
+  <CPUBrandName>       Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz</CPUBrandName>
+  <isa>avx</isa>
+  <collectionTimeBegin type="u64_t">1480508155</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1480508175</collectionTimeEnd>
+  <variables>
+   <at>ah</at>
+  </variables>
+ </rdmgr>
+</root>
